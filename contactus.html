@@ -15,110 +15,332 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styleabt.css" />
 
-    <title>iCoder -Heaven for Programmer</title>
+    <title>LogiCraftX - Contact Us</title>
+    <style>
+      /* General Page Styling */
+      body {
+        background: linear-gradient(to right, #1f3a93, #3498db);
+        color: #f3f3f3;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+    
+      nav {
+        background-color: #102a42;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+    
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #ffffff;
+      }
+    
+      .navbar-brand:hover {
+        color: #ff4b5c;
+      }
+    
+      .nav-link {
+        color: #f3f3f3;
+        transition: color 0.3s;
+      }
+    
+      .nav-link:hover {
+        color: #ff4b5c;
+      }
+    
+      footer {
+        background-color: #102a42;
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    
+      footer a {
+        color: #ff4b5c;
+        text-decoration: none;
+      }
+    
+      footer a:hover {
+        text-decoration: underline;
+      }
+    
+      /* Contact Form Container */
+      .container {
+        margin-top: 50px;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        max-width: 600px;
+      }
+    
+      h2 {
+        font-weight: bold;
+        color: #f8f8f8;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+    
+      .form-group label {
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #ffffff;
+      }
+    
+      .form-control,
+      .custom-file-input {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #333333;
+        border: 1px solid #ddd;
+        transition: border-color 0.3s, box-shadow 0.3s;
+      }
+    
+      .form-control:focus {
+        border-color: #ff4b5c;
+        box-shadow: 0 0 5px rgba(255, 75, 92, 0.5);
+      }
+    
+      .form-control::placeholder {
+        color: #888888;
+      }
+    
+      .btn-primary {
+        background-color: #904bff;
+        border: none;
+        font-weight: bold;
+        padding: 12px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: background-color 0.3s, transform 0.2s;
+      }
+    
+      .btn-primary:hover {
+        background-color: #e43a4f;
+        transform: scale(1.05);
+      }
+    
+      .custom-file-label {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #555555;
+      }
+    
+      .custom-file-input:focus + .custom-file-label {
+        border-color: #ff4b5c;
+        box-shadow: 0 0 5px rgba(255, 75, 92, 0.5);
+      }
+    
+      /* Form Spacing */
+      .form-group {
+        margin-bottom: 20px;
+      }
+    
+      textarea {
+        resize: none;
+      }
+    
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px;
+          margin: 20px;
+        }
+    
+        .navbar-brand {
+          font-size: 1.5rem;
+        }
+    
+        .btn-primary {
+          width: 100%;
+        }
+      }
+    </style>
+    
 
+    <!-- <style>
+      /* General Page Styling */
+      body {
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background-color: #0d1b2a;
+      }
+
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      footer {
+        background-color: #0d1b2a;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .container {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #ffffff14;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        font-weight: bold;
+        color: #f3f4f6;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-control,
+      .custom-file-input,
+      .btn {
+        border-radius: 5px;
+      }
+
+      .form-control {
+        background-color: #e9ecef;
+        color: #333;
+      }
+
+      .form-control::placeholder {
+        color: #777;
+      }
+
+      .btn-primary {
+        background-color: #ff4b5c;
+        border: none;
+        font-weight: bold;
+        width: 100%;
+        transition: background-color 0.3s;
+      }
+
+      .btn-primary:hover {
+        background-color: #ff6976;
+      }
+
+      .custom-file-label {
+        background-color: #e9ecef;
+        color: #333;
+      }
+
+      .custom-file-input:focus + .custom-file-label {
+        border-color: #ff4b5c;
+        box-shadow: none;
+      }
+    </style> -->
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="index.html">LogiCraftX</a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/"
-              >Home <span class="sr-only">(current)</span></a
-            >
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/about.html">About</a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Topics
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Technology</a>
-              <a class="dropdown-item" href="#">Web-Development</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">C++,JAVA,PHP</a>
-            </div>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact.html">ContactUs</a>
+            <a class="nav-link" href="/services.html">Services</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
       </div>
     </nav>
-    <div class="container my-4">
-        <h2>ContactUs</h2>
-        <form>
+
+    <!-- Contact Form -->
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="support@LogiCraftX.com"
+          />
+        </div>
+        <!-- ................ -->
+         
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <label for="phone">Phone</label>
+              <input
+                type="phone"
+                class="form-control"
+                id="phone"
+                placeholder="+123-456-7890"
+              />
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Select your Quary</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>Want to Publish my Blog</option>
-                <option>Feedback</option>
-                <option>Content Mistake</option>
-                
-              </select>
-            </div>
-           
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Give your Valuable Feedback</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                <label class="custom-file-label" for="validatedCustomFile">Choose file only if want to publish your blogs...</label>
-                <div class="invalid-feedback">Example invalid custom file feedback</div>
-              </div>
-            <button type="button" class="btn btn-primary my-4">Submit</button>
-          </form>
+        <!-- .......................... -->
+
+        <div class="form-group">
+          <label for="query">Select Your Query Type</label>
+          <select class="form-control" id="query">
+            <option>Service Feedback</option>
+            <option>Website Feedback</option>
+            <option>Pricing Feedback</option>
+            <option>Suggetions for improvement</option>
+            <option>Testimonial Request</option>
+            <option>Complaint or issue Resolution</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback">Give Your Valuable Feedback</label>
+          <textarea
+            class="form-control"
+            id="feedback"
+            rows="3"
+            placeholder="Write your Valuable feedback for LogiCraftX ❤️ "
+          ></textarea>
+        </div>
+
+        <div class="custom-file mb-3">
+          <input
+            type="file"
+            class="custom-file-input"
+            id="blogUpload"
+            required
+          />
+          <label class="custom-file-label" for="blogUpload"
+            >Choose file only if you want to publish your Valuable feedback...</label
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
 
-    
-    
-      <footer class="container ">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>© 2024-2025 LogiCraftX, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Footer -->
+    <footer>
+      <!-- <p>&copy; 2024-2025 LogiCraftX Ltd.<a href="index.html"</p> -->
+        <p>&copy; 2024 LogiCraftX Ltd. All Rights Reserved.</p>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
