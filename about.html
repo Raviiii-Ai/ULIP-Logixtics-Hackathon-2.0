@@ -3,10 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -15,13 +12,76 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
 
     <title>LogiCraftX</title>
-    <link rel="stylesheet" href="about.css" />
+    <style>
+      /* Custom Styles */
+      body {
+        background-color: #f4f4f9;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+      
+      .navbar {
+        background-color: #2d3e50;
+      }
+      
+      .navbar-brand {
+        color: #fff !important;
+        font-size: 1.8rem;
+      }
+      
+      .navbar-nav .nav-link {
+        color: #d3d3d3 !important;
+        font-size: 1.1rem;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #f8f9fa !important;
+      }
+      
+      .featurette-heading {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2d3e50;
+      }
+
+      .featurette-heading .text-muted {
+        font-weight: 300;
+        color: #6c757d;
+      }
+
+      .lead {
+        font-size: 1.1rem;
+        color: #5a6268;
+      }
+
+      .featurette img {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        background-color: #2d3e50;
+        padding: 1.5rem 0;
+        color: #fff;
+        text-align: center;
+      }
+
+      footer a {
+        color: #f8f9fa;
+      }
+
+      footer a:hover {
+        text-decoration: none;
+      }
+    </style>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="index.html">LogiCraftX</a>
       <button
         class="navbar-toggler"
@@ -38,34 +98,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about.html">About</a>
+            <a class="nav-link" href="./services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Topics
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Technology</a>
-              <a class="dropdown-item" href="#">Web-Development</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">C++,JAVA,PHP</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact.html">ContactUs</a>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">ContactUs</a>
+            </li>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -82,160 +126,132 @@
       </div>
     </nav>
 
-
-<!-- ............................................................................................................................................ -->
-    <div class="container my-1">
+    <!-- About Section -->
+    <div class="container my-5">
       <div class="row featurette about">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading">
-            Route Planning
-            <span class="text-muted">It’ll blow your mind.</span>
+            Route Planning <span class="text-muted">Optimizing Every Mile</span>
           </h2>
           <p class="lead">
-            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-            ligula porta felis euismod semper. Praesent commodo cursus magna,
-            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.
+            Efficient route planning is key to reducing operational costs and improving delivery times. Our advanced
+            logistics system ensures the best routes are always chosen, ensuring fast and reliable services.
           </p>
         </div>
         <div class="col-md-5 order-md-1">
-            <img src="./images/route-planning.jpg" class="img-fluid" height="500px" width="500px" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
-          
+          <img
+            src="./images/route-planning.jpg"
+            class="img-fluid"
+            alt="Route Planning"
+          />
         </div>
       </div>
-    </div>
 
-    <div class="container my-2">
       <div class="row featurette about">
         <div class="col-md-7">
           <h2 class="featurette-heading">
-            Management System
-            <span class="text-muted">It’ll blow your mind.</span>
+            Management System <span class="text-muted">Streamlining Operations</span>
           </h2>
           <p class="lead">
-            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-            ligula porta felis euismod semper. Praesent commodo cursus magna,
-            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.
+            Our logistics management system integrates inventory, warehousing, and distribution in one unified platform,
+            reducing redundancies and improving accuracy.
           </p>
         </div>
         <div class="col-md-5">
-          <img src="./images/inventory-management-3.jpg" class="img-fluid" height="500px" width="500px" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
-          
-            
+          <img
+            src="./images/inventory-management-3.jpg"
+            class="img-fluid"
+            alt="Inventory Management"
+          />
+        </div>
+      </div>
+
+      <div class="row featurette about">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">
+            Predictable Time Management <span class="text-muted">Always On Schedule</span>
+          </h2>
+          <p class="lead">
+            Predictive analytics helps to forecast demand and optimize supply chains, ensuring that your logistics
+            operations run smoothly and on time, every time.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img
+            src="./images/demand forecast.jpg"
+            class="img-fluid"
+            alt="Time Management"
+          />
+        </div>
+      </div>
+
+      <div class="row featurette about">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            High Fuel Costs <span class="text-muted">Minimizing Operational Expenses</span>
+          </h2>
+          <p class="lead">
+            Rising fuel costs can impact profitability. Our logistics solutions utilize optimized routing and load
+            balancing to minimize fuel consumption and cut costs.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img
+            src="./images/fuel.jpg"
+            class="img-fluid"
+            alt="Fuel Management"
+          />
+        </div>
+      </div>
+
+      <div class="row featurette about">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">
+            Driver Shortages <span class="text-muted">Efficient Resource Management</span>
+          </h2>
+          <p class="lead">
+            Driver shortages are a challenge in the logistics industry. By leveraging technology, we can automate and
+            streamline processes to reduce reliance on human resources, while ensuring efficiency and timeliness.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img
+            src="./images/driver.jpg"
+            class="img-fluid"
+            alt="Driver Shortages"
+          />
+        </div>
+      </div>
+
+      <div class="row featurette about">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            Warehouse Space Utilization <span class="text-muted">Maximizing Storage</span>
+          </h2>
+          <p class="lead">
+            Optimizing warehouse space utilization reduces operational costs and increases capacity. Our system ensures
+            maximum use of available space for improved inventory management.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img
+            src="./images/warehouse.jpg"
+            class="img-fluid"
+            alt="Warehouse Management"
+          />
         </div>
       </div>
     </div>
-    <div class="container my-3">
-        <div class="row featurette about">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">
-              Predictable time management
-              <span class="text-muted">It’ll blow your mind.</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-              <img src="./images/demand forecast.jpg" class="img-fluid" height="500px" width="500px" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
-            
-          </div>
-        </div>
-      </div>
 
-      <div class="container my-4">
-        <div class="row featurette about">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">
-              High Fuel Costs
-              <span class="text-muted">It’ll blow your mind.</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img src="./images/fuel.jpg" class="img-fluid" height="500px" width="500px" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
-            
-              
-          </div>
-        </div>
-      </div>
+    <!-- Footer Section -->
+    <footer>
+      <p class="float-right">
+        <a href="#">Back to top</a>
+      </p>
+      <p>© 2024-2025 LogiCraftX, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
 
-      <div class="container my-5">
-        <div class="row featurette about">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">
-              Driver Shortages
-              <span class="text-muted">It’ll blow your mind.</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-              <img src="./images/driver.jpg" class="img-fluid" height="500px" width="500px" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
-            
-          </div>
-        </div>
-      </div>
-  
-     
-
-      <div class="container my-4">
-        <div class="row featurette about">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">
-             Warehouse Space Utilization
-              <span class="text-muted">It’ll blow your mind.</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img src="./images/warehouse.jpg" class="img-fluid" height="500px" width="500px" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
-            
-              
-          </div>
-        </div>
-      </div>
-
-
-
-      <footer class="container my-6">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>© 2024-2025 LogiCraftX, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+      src="https://code.jquery.com/jquery-3.4.1.slim.min
