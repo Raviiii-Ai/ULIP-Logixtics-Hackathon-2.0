@@ -7,15 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
     <title>LogiCraftX</title>
+  
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html">LogiCraftX</a>
       <button
-      class="navbar-toggler"
+      class="navbar-toggler"ch
       type="button"
       data-toggle="collapse"
       data-target="#navbarNav"
@@ -26,8 +25,9 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- ...........................................................................................................................................................................................................................................................................................................................   -->
+                                                   <!-- HomePage -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active  ">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -38,21 +38,16 @@
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="contactus.html">Contact</a>
-          </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Topics
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Technology</a>
-              <a class="dropdown-item" href="#">Web-Development</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">C++,JAVA,PHP</a>
+              <a class="dropdown-item" href="logisticsProject.html">Latest Project</a>
+              <!-- <a class="dropdown-item" href="#">Blogs</a> -->
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="solution.html">Solutions</a>
             </div>
           </li>
           <li class="nav-item">
@@ -60,16 +55,18 @@
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0 mr-2 " type="submit">Search</button>
+          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0 mr-2 " type="submit">Search</button> -->
           <button type="button" class="btn btn-outline-danger mr-2" data-toggle="modal" data-target="#LoginModal">Login</button>
           <button type="button" class="btn btn-outline-danger mr-2 " data-toggle="modal" data-target="#SignUpModal">SignUp</button>
+          <!-- <button type="button" class="btn btn-outline-info" id="toggleDarkMode">Toggle Dark Mode</button> -->
         </form>
       </div>
 
     </nav>
-    <!-- loginmodalpartcode -->
- 
+   
+<!-- ......................................................................................................................................................................................................................................................  -->
+                                                                  <!-- loginmodalpartcode -->                                        
 
 <!-- Modal -->
 <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
@@ -106,11 +103,9 @@
     </div>
   </div>
 </div>
-<!-- endofloginmodalcodepart -->
 
-
-<!-- signupmodalcode -->
-
+<!-- ............................................................................................................................................................................................................................................... -->
+                                                           <!-- Create a Account -->
 <!-- Modal -->
 <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="SignUpModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -180,79 +175,500 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-<!-- 
-    ..................................................................................................................................................................................................................................................................................................................................................................................................................... -->
 
-<div class="container my-4"><div class="row mb-2">
-  <div class="col-md-6">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-primary">World</strong>
-        <h3 class="mb-0">AI-ML</h3>
-        <div class="mb-1 text-muted">Nov 12</div>
-        <p class="card-text mb-auto">"Coding is the art of spreading beauty through logic, weaving creativity into digital realms. Each line of code is a brushstroke, painting a picture of innovation and possibility."</p>
-        <a href="#" class="stretched-link">Continue reading</a>
-      </div>
-      <div class="col-auto d-none d-lg-block">
-        <img src="./images/aiml.jpg"class="bd-placeholder-img" width="200" height="250"  alt="">
+<!-- ......................................................................................................................................................................................................................................................... -->
+                                                                 <!-- Ticker -->
+
+<div class="ticker">
+      <p>Welcome to my website LogiCraftX ❤️</p>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LogiCraftX</title>
+      <style>
+        /* Ticker container */
+        .ticker {
+          overflow: hidden;
+          white-space: nowrap;
+          box-sizing: border-box;
+          background: #ffffff; /* White background */
+          color: #333333; /* Dark text for contrast */
+          font-family: 'Arial', sans-serif;
+          font-size: 1.2rem; /* Larger font for readability */
+          padding: 15px;
+          border: 1px solid #dddddd; /* Light border for subtle styling */
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+        }
+    
+        /* Scrolling text */
+        .ticker p {
+          display: inline-block;
+          white-space: nowrap;
+          animation: scroll 25s cubic-bezier(0.5, 0, 0.25, 1) infinite; /* Dynamic speed */
+          padding-left: 100%; /* Start completely offscreen */
+        }
+    
+        /* Keyframes for dynamic scrolling */
+        @keyframes scroll {
+          0% {
+            transform: translateX(100%); /* Start quickly off the right */
+          }
+          10% {
+            transform: translateX(0); /* Quickly settle on the screen */
+          }
+          90% {
+            transform: translateX(-100%); /* Slowly scroll off the left */
+          }
+          100% {
+            transform: translateX(-100%); /* Ensure it ends off the screen */
+          }
+        }
+      </style>
+    </head>
+    
+    </html>
+    
+     
+<!-- ...................................................................................................................................................................................................... -->
+                                                               <!-- Logistics Projects -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logistics Projects</title>
+  <style>
+    /* General Styles */
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .max-w-screen-xl {
+      max-width: 1200px;
+    }
+
+    /* Section Title with Aesthetic Border */
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #1788ae;
+      background: #fff;
+      padding: 15px 30px;
+      display: inline-block;
+      margin: 20px auto;
+      border: 3px solid #1788ae;
+      border-radius: 10px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(23, 136, 174, 0.3);
+    }
+
+    /* Project Container */
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 40px;
+      position: relative;
+    }
+
+    @media (min-width: 640px) {
+      .project-container {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    .project-link {
+      flex: 1;
+      text-align: center;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-image {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(23, 136, 174, 0.6);
+    }
+
+    .project-label {
+      background: #1788ae;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 0.9rem;
+      margin-top: 10px;
+      display: inline-block;
+      border-radius: 4px;
+    }
+
+    /* Project Info */
+    .project-info {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      color: #1788ae;
+      margin-bottom: 5px;
+    }
+
+    .project-subtitle {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      text-align: justify;
+      color: #666;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+      list-style-type:none;
+      padding: 0;
+    }
+
+    .tech-stack li {
+      display: inline-block;
+      background: #eee;
+      /* color: #333; */
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      border: 1px solid #ccc;
+    }
+
+    /* Dividers and Connectors */
+    .divider {
+  height: 2px;
+  background: #1788ae;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 50%;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+    .reverse.divider {
+      left: 50%;
+      right: 25%;
+    }
+
+    .connector {
+  width: 15px;
+  height: 15px;
+  background: #1788ae;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+    @media (min-width: 640px) {
+      .divider{
+        height: 1px;
+        left:20%;
+        right:20%;
+      }
+      .connector {
+        width:10px;
+        height:10px;
+      }
+    }
+
+    /* Extra margin at the end */
+    .logistics-section {
+      margin-bottom: 40px; /* This adds space at the bottom */
+    }
+  </style>
+</head>
+<body>
+  <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16 logistics-section">
+    <h2 class="section-title">
+      Latest Logistics Projects
+    </h2>
+    <div class="project-container">
+      <div class="divider"></div>
+      <div class="connector"></div>
+      <!-- <a href="https://procodrr.com" class="project-link"> -->
+        <div class="project-card">
+          <img class="project-image" src="./images/Real-Time Logistics Optimization Platform-8.jpg" alt="ProCodrr" />
+          <span class="project-label">LogiCraftX</span>
+        </div>
+      </a>
+      <div class="project-info">
+        <h3 class="project-title">Real-Time Logistics Optimization Platform</h3>
+        <span class="project-subtitle"></span>
+        <p class="project-description">
+          <!-- Transforming logistics operations by implementing scalable platforms for optimizing transportation and warehouse operations. -->
+        </p>
+        <ul class="tech-stack">
+          <li>#AI/ML</li>
+          <!-- <li>#Machine Learning</li> -->
+          <li>#Internet of Things</li>
+          <li>#Blockchain</li>
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="col-md-6">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-success">Design</strong>
-        <h3 class="mb-0">BlockChain Technology</h3>
-        <div class="mb-1 text-muted">Nov 11</div>
-        <p class="mb-auto">"In coding, mastering design is not just about syntax; it's about crafting experiences. Understanding the interplay between form and function is the essence of coding's artistry."</p>
-        <a href="#" class="stretched-link">Continue reading</a>
+
+    <div class="project-container">
+      <div class="divider reverse"></div>
+      <div class="connector reverse"></div>
+      <div class="project-info">
+        <h3 class="project-title">Dynamic Route optimization System</h3>
+        <span class="project-subtitle"></span>
+        <!-- <p class="project-description">
+          Developed systems to streamline educational logistics for online learning platforms, enhancing user experience and reducing costs.
+        </p> -->
+        <ul class="tech-stack">
+          <li>#IoT</li>
+          <li>#GPS</li>
+          <li>#AI-based predictive Analytics</li>
+          <!-- <li>#API's</li> -->
+        </ul>
       </div>
-      <div class="col-auto d-none d-lg-block">
-       <img src="./images/blockchain.jpg"class="bd-placeholder-img" width="200" height="245" alt="">
+      <a href="#" class="project-link">
+        <div class="project-card">
+          <img class="project-image" src="./images/Dynamic Route optimization System-3.jpg" alt="EazyGrad" />
+          <span class="project-label">LogiCraftX</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-container">
+      <div class="divider"></div>
+      <div class="connector"></div>
+      <!-- <a href="https://procodrr.com" class="project-link"> -->
+        <div class="project-card">
+          <img class="project-image" src="./images/Predictive Inventory Management Tool-3.jpg" alt="ProCodrr" />
+          <span class="project-label">LogiCraftX</span>
+        </div>
+      </a>
+      <div class="project-info">
+        <h3 class="project-title">Predictive Inventory Management Tool</h3>
+        <span class="project-subtitle"></span>
+        <!-- <p class="project-description">
+          Transforming logistics operations by implementing scalable platforms for optimizing transportation and warehouse operations.
+        </p> -->
+        <ul class="tech-stack">
+          <li>#AI</li>
+          <li>#ML</li>
+          <li>#Scalable Cloud Infrastructure</li>
+          <!-- <li>#JavaScript</li> -->
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="col-md-6">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-primary">TechBlog</strong>
-        <h3 class="mb-0">Cloud Technology </h3>
-        <div class="mb-1 text-muted">Nov 12</div>
-        <p class="card-text mb-auto">"New technologies in the coding world are not just tools; they're the brushstrokes of innovation on the canvas of possibility. Embrace them, for they are the pathways to a future where imagination knows no bounds."</p>
-        <a href="#" class="stretched-link">Continue reading</a>
+
+    <div class="project-container">
+      <div class="divider reverse"></div>
+      <div class="connector reverse"></div>
+      <div class="project-info">
+        <h3 class="project-title">Blockchain-Powered Transparent Freight</h3>
+        <span class="project-subtitle"></span>
+        <!-- <p class="project-description">
+          Developed systems to streamline educational logistics for online learning platforms, enhancing user experience and reducing costs.
+        </p> -->
+        <ul class="tech-stack">
+          <li>#Blockchain</li>
+          <li>#IoT</li>
+          <!-- <li>#CSS</li>
+          <li>#Figma</li> -->
+        </ul>
       </div>
-      <div class="col-auto d-none d-lg-block">
-        <img src="./images/cloud-tech.jpg"class="bd-placeholder-img" width="200" height="250"  alt="">
+      <a href="#" class="project-link">
+        <div class="project-card">
+          <img class="project-image" src="./images/Blockchain-Powered Transparent Freight-1.jpg" alt="EazyGrad" />
+          <span class="project-label">LogiCraftX</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-container">
+      <div class="divider"></div>
+      <div class="connector"></div>
+      <!-- <a href="https://procodrr.com" class="project-link"> -->
+        <div class="project-card">
+          <img class="project-image" src="./images/Carbon Emission Optimization Platform-1. Vector illustration_" alt="ProCodrr" />
+          <span class="project-label">LogiCraftX</span>
+        </div>
+      </a>
+      <div class="project-info">
+        <h3 class="project-title">Carbon Emission Optimization Platform</h3>
+        <span class="project-subtitle"></span>
+        <ul class="tech-stack">
+          <li>#Carbon Emission Calculation API's</li>
+          <li>#AI</li>
+          <li>#ML</li>
+          <!-- <li>#JavaScript</li> -->
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="col-md-6">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-success">World Changer</strong>
-        <h3 class="mb-0"> IOT </h3>
-        <div class="mb-1 text-muted">Nov 11</div>
-        <p class="mb-auto">"In the boundless expanse of the computer world, coding is the language that brings dreams to life. Each line of code is a keystroke of creation, shaping the digital landscapes of tomorrow with the artistry of today's imagination."</p>
-        <a href="#" class="stretched-link">Continue reading</a>
+
+    <div class="project-container">
+      <div class="divider reverse"></div>
+      <div class="connector reverse"></div>
+      <div class="project-info">
+        <h3 class="project-title">Seamless Data Integration System</h3>
+        <span class="project-subtitle"></span>
+        <!-- <p class="project-description">
+          Developed systems to streamline educational logistics for online learning platforms, enhancing user experience and reducing costs.
+        </p> -->
+        <ul class="tech-stack">
+          <li>#API's for Freight</li>
+          <li>#Container Tracking</li>
+          <li>#Toll systems</li>
+          <!-- <li>#Figma</li> -->
+        </ul>
       </div>
-      <div class="col-auto d-none d-lg-block">
-       <img src="./images/IOT.jpg"class="bd-placeholder-img" width="200" height="250" alt="">
-      </div>
+      <a href="#" class="project-link">
+        <div class="project-card">
+          <img class="project-image" src="./images/Seamless Data Integration System-3.jpg" alt="EazyGrad" />
+          <span class="project-label">LogiCraftX</span>
+        </div>
+      </a>
     </div>
-  </div>
-</div></div>
-<!-- <footer class="container">
-  <p class="float-right"><a href="#">Back to top</a></p>
-  <p>© 2024-2025 LogiCraftX , Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-</footer> -->
+  </section>
+
+<!--................................................................................................................................................................................................................................................................. -->
+                                             <!-- Solution by Using technology -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: #333;
+            border: 2px solid #333; /* Border around the heading */
+            padding: 15px; /* Padding inside the border */
+            border-radius: 8px; /* Rounded corners for the border */
+            width: 80%; /* Adjust the width to your preference */
+            margin-left: auto; /* Center the heading */
+            margin-right: auto; /* Center the heading */
+        }
+    </style>
+
+    <!-- Heading Section with Border -->
+    <div class="heading">Solution by Using Technology</div>
+
+    <!-- Content Section -->
+    <div class="container my-4">
+        <div class="row mb-2">
+            <!-- First Column -->
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Tech</strong>
+                        <h3 class="mb-0">AI-ML</h3>
+                        <div class="mb-1 text-muted">2024</div>
+                        <p class="card-text mb-auto">"AI/ML transforms logistics by enabling predictive analytics and optimization. It helps in accurate demand forecasting, dynamic route optimization."</p>
+                        <a href="https://www.canva.com/design/DAGX17yyCDs/SjjK1_QfXyJwyWC_b4V3Lg/view" class="stretched-link">Continue watching</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/aiml.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Tech</strong>
+                        <h3 class="mb-0">BlockChain Technology</h3>
+                        <div class="mb-1 text-muted">2024</div>
+                        <p class="mb-auto">"Blockchain technology addresses the critical issues of transparency, security, and trust in logistics."</p>
+                        <a href="https://www.canva.com/design/DAGX18G_TZE/RWp_AnkFctagZ_Ejb9Tppw/watch" class="stretched-link">Continue watching</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/blockchain.jpg" class="bd-placeholder-img" width="200" height="245" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Tech</strong>
+                        <h3 class="mb-0">Cloud Technology</h3>
+                        <div class="mb-1 text-muted">2024</div>
+                        <p class="card-text mb-auto">"Cloud technology revolutionizes logistics by providing scalability, flexibility, and seamless integration."</p>
+                        <a href="https://www.canva.com/design/DAGX12En0S8/H40EH-Iffb852llWfOky8Q/watch" class="stretched-link">Continue watching</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/cloud-tech.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Column -->
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">World Changer</strong>
+                        <h3 class="mb-0">IOT</h3>
+                        <div class="mb-1 text-muted">2024</div>
+                        <p class="mb-auto">"IoT (Internet of Things) brings real-time tracking, automation, and security to logistics operations."</p>
+                        <a href="https://www.canva.com/design/DAGX2FqaC4c/CB24wM0aHE_YNwitvEDsww/watch" class="stretched-link">Continue watching</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="./images/IOT.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ..................................................................................................................................................................................................................................................................................................................................................................... -->
+
+                                                        <!-- Footer -->
 
 <footer class="bg-dark text-white text-center py-3">
-  <p>&copy; 2024-2025 LogiCraftX, Inc.</p>
+  <!-- <p>&copy; 2024-2025 LogiCraftX, Inc.</p> -->
+  <p>&copy; 2024 LogiCraftX Ltd. All Rights Reserved.</p>
   <div>
-    <a href="https://facebook.com" class="mx-2 text-white">Facebook</a>
-    <a href="https://twitter.com" class="mx-2 text-white">Twitter</a>
-    <a href="https://instagram.com" class="mx-2 text-white">Instagram</a>
-    <a href="https://linkedin.com" class="mx-2 text-white">LinkedIn</a>
+    <a href="https://www.facebook.com/ravi.panchal.kaithi01" class="mx-2 text-white">Facebook</a>
+    <a href="https://x.com/Ravi_gsv" class="mx-2 text-white">Twitter</a>
+    <a href="https://www.instagram.com/mr_ravi.panchal/" class="mx-2 text-white">Instagram</a>
+    <a href="https://www.linkedin.com/in/ravi-panchal123" class="mx-2 text-white">LinkedIn</a>
   </div>
 </footer>
     <!-- Optional JavaScript -->
